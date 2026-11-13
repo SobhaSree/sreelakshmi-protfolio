@@ -1,4 +1,11 @@
-import { FiClipboard, FiCpu, FiDatabase, FiGlobe } from "react-icons/fi";
+import {
+  FiClipboard,
+  FiCpu,
+  FiDatabase,
+  FiGlobe,
+  FiTool,
+  FiUsers,
+} from "react-icons/fi";
 import { skillCategories } from "../data/skills";
 
 const iconMap = {
@@ -6,6 +13,8 @@ const iconMap = {
   cpu: FiCpu,
   globe: FiGlobe,
   database: FiDatabase,
+  tool: FiTool,
+  users: FiUsers,
 };
 
 export default function Skills() {
@@ -14,10 +23,9 @@ export default function Skills() {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">02 — Skills</p>
-          <h2 className="section-title">Skills</h2>
+          <h2 className="section-title">Skills &amp; Expertise</h2>
           <p className="section-text">
-            Skills I am developing across manual testing, automation, API
-            testing, and supporting tools.
+            Technical competencies, testing methodologies, automation tools, and professional strengths.
           </p>
         </div>
 

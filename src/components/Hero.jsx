@@ -1,5 +1,5 @@
 import profilePlaceholder from "../assets/profile-placeholder.svg";
-import CopyResumeButton from "./CopyResumeButton";
+import DownloadResumeButton from "./DownloadResumeButton";
 import SocialLinks from "./SocialLinks";
 
 export default function Hero() {
@@ -9,18 +9,18 @@ export default function Hero() {
         <div className="hero-copy">
           <p className="eyebrow">Personal portfolio</p>
           <h1 className="hero-title">Sreelakshmi Aji</h1>
-          <p className="hero-role">Aspiring QA Engineer</p>
+          <p className="hero-role">Aspiring QA / Test Engineer</p>
           <p className="hero-intro">
-            I am an aspiring QA Engineer with an interest in software quality
-            assurance and software testing. I enjoy exploring applications,
-            identifying issues, and ensuring that software meets user
-            expectations.
+            Computer Science Engineering graduate seeking an entry-level QA /
+            Test Engineer position. Knowledge of manual testing, test case
+            design, defect reporting, API testing, and UI automation using
+            Playwright with TypeScript.
           </p>
           <div className="hero-actions">
             <a className="btn btn-secondary" href="#projects">
               View Projects
             </a>
-            <CopyResumeButton />
+            <DownloadResumeButton />
           </div>
           <SocialLinks items={["github", "linkedin"]} className="hero-social" />
         </div>

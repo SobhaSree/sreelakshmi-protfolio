@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FiAlertCircle, FiSend } from "react-icons/fi";
+import { FiAlertCircle, FiMail, FiMapPin, FiPhone, FiSend } from "react-icons/fi";
 import SocialLinks from "./SocialLinks";
 
 const initialForm = {
@@ -177,16 +177,35 @@ export default function Contact() {
           </form>
 
           <aside className="card contact-aside">
-            <p className="eyebrow">Profiles</p>
-            <h3>Find me online</h3>
+            <p className="eyebrow">Contact Information</p>
+            <h3>Get in Touch</h3>
             <p>
-              GitHub, LinkedIn, and email links are ready for you to add. Until
-              a link is saved, selecting it explains where to update it.
+              I am open to entry-level QA, testing, and automation opportunities.
+              Feel free to reach out directly:
             </p>
-            <SocialLinks
-              items={["github", "linkedin", "email"]}
-              className="contact-social"
-            />
+
+            <ul className="contact-info-list">
+              <li>
+                <FiMail aria-hidden="true" />
+                <a href="mailto:ajisreelakshmi87@gmail.com">ajisreelakshmi87@gmail.com</a>
+              </li>
+              <li>
+                <FiPhone aria-hidden="true" />
+                <a href="tel:+918848873372">+91 8848873372</a>
+              </li>
+              <li>
+                <FiMapPin aria-hidden="true" />
+                <span>Panichayam, Nedungapra P.O., Kerala</span>
+              </li>
+            </ul>
+
+            <div className="contact-social-wrapper">
+              <p className="contact-social-title">Connect with me</p>
+              <SocialLinks
+                items={["github", "linkedin", "email"]}
+                className="contact-social"
+              />
+            </div>
           </aside>
         </div>
       </div>

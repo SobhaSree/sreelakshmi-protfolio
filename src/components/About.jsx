@@ -11,33 +11,71 @@ export default function About() {
           <article className="card about-copy">
             <p>Hi, I&apos;m Sreelakshmi Aji.</p>
             <p>
-              I am an aspiring QA Engineer with an interest in software quality
-              assurance and software testing. I enjoy exploring applications,
-              identifying issues and ensuring that software meets user
-              expectations.
+              I am a Computer Science Engineering graduate seeking an entry-level
+              QA / Test Engineer position. I have knowledge of manual testing,
+              test case design, defect reporting, API testing, and UI automation
+              using Playwright with TypeScript.
             </p>
             <p>
-              I am developing my skills in manual testing, automation testing
-              using Playwright and TypeScript, API testing and SQL.
+              I am eager to apply my testing skills, learn industry practices, and
+              contribute to software quality by identifying issues early and
+              ensuring applications meet user expectations.
             </p>
-            <p>
-              I am passionate about learning new technologies, improving my
-              technical skills and building reliable software through effective
-              testing.
-            </p>
+
+            <div className="about-subblock">
+              <h4>Certifications</h4>
+              <ul className="cert-pills">
+                <li>Cyber Security and Ethical Hacking – Techmaghi</li>
+                <li>Problem Solving and Ideation Bootcamp – IEDC</li>
+                <li>SAWIT.AI Learnathon – GUVI</li>
+                <li>Cyber Awareness Session – Offenso</li>
+                <li>Chatbot Mastery – IEDC Summit</li>
+                <li>UXperience Figma Workshop – CYBORGS</li>
+              </ul>
+            </div>
+
+            <div className="about-subblock">
+              <h4>Leadership &amp; Activities</h4>
+              <p className="leadership-text">
+                First Year Class Representative • Students Lead – IEDC • Student
+                Coordinator – Debate and Quiz Club • Women Lead – IEDC (2024–2025)
+                • Executive Member – NSS (2024–2025) • Volunteer – Little Kites (2020)
+              </p>
+            </div>
           </article>
 
           <article className="card education-card">
             <p className="eyebrow">Education</p>
-            <h3>B.Tech Computer Science</h3>
+            <h3>Academic Background</h3>
             <dl className="education-list">
               <div>
-                <dt>College</dt>
-                <dd>Mar Baselios Institute of Technology and Science</dd>
+                <dt>2022 – 2026</dt>
+                <dd>
+                  <strong>B.Tech, Computer Science and Engineering</strong>
+                </dd>
+                <dd className="education-school">
+                  Mar Baselios Institute of Technology and Science, Nellimattom, Kothamangalam
+                </dd>
               </div>
+
               <div>
-                <dt>Graduation Year</dt>
-                <dd>2026</dd>
+                <dt>2020 – 2022</dt>
+                <dd>
+                  <strong>Higher Secondary (Plus Two)</strong>
+                </dd>
+                <dd className="education-school">
+                  MGM Higher Secondary School, Kuruppampady
+                </dd>
+              </div>
+
+              <div>
+                <dt>2020</dt>
+                <dd>
+                  <strong>SSLC</strong>
+                </dd>
+                <dd className="education-school">
+                  MGM Higher Secondary School, Kuruppampady
+                </dd>
               </div>
             </dl>
           </article>

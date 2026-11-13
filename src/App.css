@@ -306,6 +306,49 @@
   font-size: 1.05rem;
 }
 
+.education-school {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.about-subblock {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.about-subblock h4 {
+  font-size: 0.9rem;
+  color: #c4b5fd;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.cert-pills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cert-pills li {
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 0.82rem;
+  color: var(--text-primary);
+}
+
+.leadership-text {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 .skills-grid,
 .project-list,
 .experience-list {
@@ -422,11 +465,20 @@
   margin: 0 auto 24px;
 }
 
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.resume-download,
+.download-resume,
 .resume-copy,
 .copy-resume {
-  display: grid;
-  justify-items: center;
-  gap: 12px;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .contact-grid {
@@ -437,6 +489,53 @@
 .contact-aside {
   display: grid;
   gap: 16px;
+}
+
+.contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.contact-info-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.contact-info-list li svg {
+  color: var(--accent);
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+.contact-info-list a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contact-info-list a:hover {
+  color: var(--accent);
+}
+
+.contact-social-wrapper {
+  margin-top: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+}
+
+.contact-social-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #c4b5fd;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
 }
 
 .demo-banner,
@@ -627,6 +726,10 @@
 
   .hero-actions,
   .hero-actions .btn,
+  .resume-actions,
+  .resume-actions .btn,
+  .download-resume,
+  .download-resume .btn,
   .copy-resume,
   .copy-resume .btn,
   .contact-form .btn {

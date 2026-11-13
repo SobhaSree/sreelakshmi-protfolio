@@ -1,20 +1,15 @@
 import { experience } from "../data/experience";
 
-function ExperienceText({ value, emptyLabel }) {
-  if (value && value.trim()) {
-    return <p>{value}</p>;
-  }
-
-  return <p className="placeholder-copy">{emptyLabel}</p>;
-}
-
 export default function Experience() {
   return (
     <section className="section" id="experience">
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">04 — Experience</p>
-          <h2 className="section-title">Experience</h2>
+          <h2 className="section-title">Internship &amp; Training Experience</h2>
+          <p className="section-text">
+            Practical experience across software testing, test automation, and technical training.
+          </p>
         </div>
 
         <div className="experience-list">
@@ -28,36 +23,30 @@ export default function Experience() {
                 <p className="duration-pill">{item.duration}</p>
               </header>
 
-              <div className="experience-block">
-                <h4>Responsibilities</h4>
-                {item.responsibilities.length > 0 ? (
+              {item.responsibilities && item.responsibilities.length > 0 ? (
+                <div className="experience-block">
+                  <h4>Key Activities &amp; Responsibilities</h4>
                   <ul>
                     {item.responsibilities.map((responsibility) => (
                       <li key={responsibility}>{responsibility}</li>
                     ))}
                   </ul>
-                ) : (
-                  <p className="placeholder-copy">
-                    Add your responsibilities in src/data/experience.js.
-                  </p>
-                )}
-              </div>
+                </div>
+              ) : null}
 
-              <div className="experience-block">
-                <h4>Learning experience</h4>
-                <ExperienceText
-                  value={item.learningExperience}
-                  emptyLabel="Add what you learned during this internship in src/data/experience.js."
-                />
-              </div>
+              {item.learningExperience ? (
+                <div className="experience-block">
+                  <h4>Key Learning</h4>
+                  <p>{item.learningExperience}</p>
+                </div>
+              ) : null}
 
-              <div className="experience-block">
-                <h4>Details</h4>
-                <ExperienceText
-                  value={item.details}
-                  emptyLabel="Add any other relevant details in src/data/experience.js."
-                />
-              </div>
+              {item.details ? (
+                <div className="experience-block">
+                  <h4>Overview</h4>
+                  <p>{item.details}</p>
+                </div>
+              ) : null}
             </article>
           ))}
         </div>
