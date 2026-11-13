@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FiAlertCircle, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { socialLinks } from "../config/socialConfig";
+console.log("Social Links:", socialLinks);
 
 const linkDetails = {
   github: { label: "GitHub", icon: FiGithub },
@@ -26,6 +27,10 @@ export default function SocialLinks({ items = ["github", "linkedin"], className 
           const detail = linkDetails[key];
           const Icon = detail.icon;
           const rawValue = socialLinks[key] ?? "";
+          console.log("GitHub URL:", socialLinks.github);
+          console.log("SOCIAL CONFIG:", socialLinks);
+console.log("Current key:", key);
+console.log("Current value:", rawValue);
           const hasLink = rawValue.trim() !== "";
 
           if (!hasLink) {
